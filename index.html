@@ -1,61 +1,21 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CourseCompass</title>
-        <link rel="stylesheet" href="style.css">
+    <title>Simple HTML Example</title>
 </head>
-<body class = "active">
-    <div class="wrapper">
-        <div class="section">
-            <div class="top_navbar">
-                <div class="hamburger">
-                    <a href="#">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </div>
-            </div>
-        <div class="sidebar">
-            <div class="profile">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/CSUN_Seal.png" alt="profile_picture">
-                <h3>CourseCompass</h3>
-            </div>
-            <ul>
-                <li>
-                    <a href="index.html" class="active">
-                        <span class="icon"><i class="fas fa-home"></i></span>
-                        <span class="item">Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="planning.html">
-                        <span class="icon"><i class="fas fa-network-wired"></i></span>
-                        <span class="item">Planning</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://catalog.csun.edu/academics/comp/courses/" target="_blank"> 
-                        <span class="icon"><i class="fas fa-book-open"></i></span>
-                        <span class="item">Course Catalog</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-chart-line"></i></span>
-                        <span class="item">Reports</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+<body>
+    <iframe src="navbar.html" frameborder="0" scrolling="no" width="100%" height="50"></iframe>
+<h1>Welcome to Home!</h1>
 
-    </div>
-  <script>
-    var hamburger = document.querySelector(".hamburger");
-    hamburger.addEventListener("click", function(){
-    document.querySelector("body").classList.toggle("active");
-})
-  </script>
+<p>This is a paragraph of text.</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
 </body>
 </html>
