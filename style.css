@@ -14,6 +14,7 @@ body{
 }
 .wrapper {
     display: inline-block;
+    float: left;
 }
 
 .wrapper .sidebar{
@@ -89,6 +90,7 @@ body{
 }
 .right-body {
     display: inline-block;
+    float: right;
 }
 
 body.active .wrapper .sidebar{
