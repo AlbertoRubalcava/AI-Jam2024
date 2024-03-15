@@ -90,7 +90,7 @@ body{
 }
 .right-body {
     display: inline-block;
-    float: right;
+    float: left;
 }
 
 body.active .wrapper .sidebar{
