@@ -7,7 +7,7 @@
     <title>Document</title>
         <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class = "active">
     <div class="wrapper">
         <div class="section">
             <div class="top_navbar">
@@ -59,6 +59,10 @@
 
     </div>
   <script>
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+    document.querySelector("body").classList.toggle("active");
+})
   </script>
 </body>
 </html>
