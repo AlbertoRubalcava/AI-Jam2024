@@ -85,24 +85,6 @@ body{
     transition: all 0.5s ease;
 }
 
-.wrapper .section .top_navbar{
-    background: rgb(210, 32, 48);
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-
-}
-
-.wrapper .section .top_navbar .hamburger a{
-    font-size: 28px;
-    color: #f4fbff;
-}
-
-.wrapper .section .top_navbar .hamburger a:hover{
-    color: #bec6c3;
-}
-
 body.active .wrapper .sidebar{
     left: -225px;
 }
