@@ -93,3 +93,7 @@ body.active .wrapper .section{
     margin-left: 0;
     width: 100%;
 }
+
+html, body, .parent-container {
+    height: 100%;
+}
