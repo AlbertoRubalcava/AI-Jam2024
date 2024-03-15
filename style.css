@@ -12,6 +12,9 @@
 body{
     background: #eff1fa;
 }
+.wrapper {
+    display: inline-block;
+}
 
 .wrapper .sidebar{
     background: rgb(210, 32, 48);
@@ -83,6 +86,9 @@ body{
     width: calc(100% - 225px);
     margin-left: 225px;
     transition: all 0.5s ease;
+}
+.right-body {
+    display: inline-block;
 }
 
 body.active .wrapper .sidebar{
