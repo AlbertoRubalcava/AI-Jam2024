@@ -4,14 +4,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.user-img {
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75px;
-    border-radius: 100%;
-    border: 1px solid #eee;
+
+body{
+    background: #eff1fa;
 }
 
 .implemented{
@@ -103,6 +98,9 @@ font-weight: 600;
     font-size: 18px;
     font-weight: 200;
 }
+.right-body {
+    display: inline-block;
+}
 
 .main-content {
     position: absolute;
@@ -110,4 +108,19 @@ font-weight: 600;
     top:10px;
     left:235px;
     width: calc(100% - 250px);
+}
+
+.svg-container {
+    background-color: green;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+.main-body{
+    flex-grow: 100;
+    text-align: center;
+}
+
+.box {
+    display: flex;
 }
