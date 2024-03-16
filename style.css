@@ -11,10 +11,26 @@
 
 body{
     background: #eff1fa;
+    padding:0%;
+    overflow: hidden;
 }
-.wrapper {
-    display: inline-block;
+
+iframe{
+    height: 100vh;
+    margin-bottom: 0px;
+}
+.nav-bar {
     float: left;
+}
+
+.main-body {
+    float: left;
+}
+
+.nav-body{
+    height: 100%;
+    margin-bottom: 0px;
+    user-select: none;
 }
 
 .wrapper .sidebar{
@@ -103,4 +119,19 @@ body.active .wrapper .section{
 
 html, body, .parent-container {
     height: 100%;
+}
+
+.svg-container {
+    background-color: green;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+.main-body{
+    flex-grow: 100;
+    text-align: center;
+}
+
+.box {
+    display: flex;
 }
