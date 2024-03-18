@@ -33,7 +33,7 @@ iframe{
 }
 
 .wrapper .sidebar{
-    background: rgb(210, 32, 48);
+    background: rgb(184, 26, 39);
     position: fixed;
     top: 0;
     left: 0;
@@ -50,14 +50,15 @@ iframe{
 
 .wrapper .sidebar .profile img{
     display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    border-radius: 75%;
     margin: 0 auto;
 }
 
-.wrapper .sidebar .profile h3{
+.wrapper .sidebar .profile h2{
     color: #ffffff;
+    padding-top: 10px;
     margin: 10px 0 5px;
 }
 
@@ -68,10 +69,10 @@ iframe{
 
 .wrapper .sidebar ul li a{
     display: block;
-    padding: 13px 30px;
-    border-bottom: 1px solid #000000;
+    padding: 20px 30px;
     color: rgb(241, 237, 237);
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 700;
     position: relative;
 }
 
@@ -80,40 +81,18 @@ iframe{
     width: 30px;
     display: inline-block;
 }
-.wrapper .sidebar ul li a:hover,
-
-.wrapper .sidebar ul li a.active{
+.wrapper .sidebar ul li a:hover{
     color: #55565a;
-
     background:white;
-    border-right: 2px solid rgb(210, 32, 48);
 }
 
-.wrapper .sidebar ul li a:hover .icon,
-.wrapper .sidebar ul li a.active .icon{
-    color: #000000;
-}
 
-.wrapper .sidebar ul li a:hover:before,
-.wrapper .sidebar ul li a.active:before{
+.wrapper .sidebar ul li a:hover:before{
     display: block;
 }
-.wrapper .section{
-    width: calc(100% - 225px);
-    margin-left: 225px;
-    transition: all 0.5s ease;
-}
+
 .right-body {
     display: inline-block;
-}
-
-body.active .wrapper .sidebar{
-    left: -225px;
-}
-
-body.active .wrapper .section{
-    margin-left: 0;
-    width: 100%;
 }
 
 html, body, .parent-container {
@@ -134,3 +113,85 @@ html, body, .parent-container {
 .box {
     display: flex;
 }
+
+.implemented{
+    color:#ffffff;
+    text-align: center;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.unitbox {
+    margin-top: 50px;
+    margin-left: 75px;
+    text-align: center;
+    padding: 25px 10px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0px 0px 5px#9a9ba0;
+    background-color: #ffff;
+    font-family: Impact;
+}
+.uTakenNum{
+    font-size: 33px;
+    padding-top: 5px;
+    text-align: bottom;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+}
+.uTakenTitle{
+    font-weight: 400;
+    font-size: 20px;
+    color:#55565a;
+    font-family: Impact;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 33px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+ 
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+ 
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+
+
