@@ -21,9 +21,11 @@ d3.json("mydata.json", function (data) {
       .attr("class", "node")
       .attr("transform", function (d) {return "translate(" + d.y + "," +d.x+")";})
     
-  node.append("circle")
-    .attr("r",5)
-    .attr("fill", "steelblue");
+  node.append("rect")
+    .attr("width",100)
+    .attr("height", 50)
+    .attr("stroke","black")
+    .attr('fill', '#69a3b2');
 
   node.append("text")
     .text(function (d) {return d.name});
