@@ -4,11 +4,9 @@ var canvas = d3.select("#main").append("svg")
   .append("g")
     .attr("transform","translate(50,50)");
 
-<<<<<<< Updated upstream
   function selectOption(option) {
     document.querySelector('.dropbtn').innerText = option;
   }
-=======
 var tree = d3.layout.tree()
   .size([400,400]);
 
@@ -42,4 +40,3 @@ d3.json("mydata.json", function (data) {
     .attr("stroke", "black")
     .attr("d", diagonal);
 })
->>>>>>> Stashed changes
