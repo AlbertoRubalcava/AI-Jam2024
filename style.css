@@ -99,11 +99,6 @@ html, body, .parent-container {
     height: 100%;
 }
 
-.svg-container {
-    background-color: green;
-    margin-top: 300px;
-    margin-bottom: 100px;
-}
 
 .main-body{
     flex-grow: 100;
@@ -193,5 +188,11 @@ html, body, .parent-container {
     display: block;
 }
   
-
+#unitboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 90%;
+    width: calc(100%-20px);
+}
 

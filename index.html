@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CourseCompass</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
 </head>
 <body>
     <!--Container div for all divs-->
@@ -15,34 +16,33 @@
             <iframe src="navbar.html" frameborder="0" scrolling="no" width="225" height="750"></iframe>
         </div>
         <!--div for main body-->
-        <div class="unitbox">
-            <p class="uTakenTitle">UNITS TAKEN</p>
-            <br>
-            <p class="uTakenNum">135</p>
-        </div>
-        <div class="unitbox">
-            <p class="uTakenTitle">TOTAL GPA</p>
-            <br>
-            <p class="uTakenNum">3.78</p>
-        </div>
-        <div class="unitbox">
-            <p class="uTakenTitle">GRADUATION YEAR</p>
-            <div class="dropdown">
-                <br>
-                <button class="dropbtn">Select Year</button>
-                <div class="dropdown-content">
-                  <a href="#" onclick="selectOption('Fall 2024')">Fall 2024</a>
-                  <a href="#" onclick="selectOption('Spring 2025')">Spring 2025</a>
-                  <a href="#" onclick="selectOption('Fall 2025')">Fall 2025</a>
-                  <a href="#" onclick="selectOption('Fall 2025')">Spring 2025</a>
+        <div class = "main-body" id="main">
+            <div id="unitboxes">
+                <div class="unitbox">
+                    <p class="uTakenTitle">UNITS TAKEN</p>
+                    <br>
+                    <p class="uTakenNum">135</p>
                 </div>
-              </div>
+                <div class="unitbox">
+                    <p class="uTakenTitle">TOTAL GPA</p>
+                    <br>
+                    <p class="uTakenNum">3.78</p>
+                </div>
+                <div class="unitbox">
+                    <p class="uTakenTitle">GRADUATION YEAR</p>
+                    <div class="dropdown">
+                        <br>
+                        <button class="dropbtn">Select Year</button>
+                        <div class="dropdown-content">
+                          <a href="#" onclick="selectOption('Fall 2024')">Fall 2024</a>
+                          <a href="#" onclick="selectOption('Spring 2025')">Spring 2025</a>
+                          <a href="#" onclick="selectOption('Fall 2025')">Fall 2025</a>
+                          <a href="#" onclick="selectOption('Fall 2025')">Spring 2025</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
         </div>
-        <div class = "main-body">
-            <svg></svg>
-        </div>
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-        <script src="index.js"></script>
     </div>
     
 </body>
