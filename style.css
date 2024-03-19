@@ -120,10 +120,10 @@ html, body, .parent-container {
 
 .unitbox {
     margin-top: 50px;
-    margin-left: 75px;
+    margin-left: 50px;
     text-align: center;
     padding: 25px 10px;
-    width: 250px;
+    width: 200px;
     height: 150px;
     box-shadow: 0px 0px 5px#9a9ba0;
     background-color: #ffff;
