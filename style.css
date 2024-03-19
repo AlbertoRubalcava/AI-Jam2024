@@ -196,3 +196,8 @@ html, body, .parent-container {
     width: calc(100%-20px);
 }
 
+.svg-style {
+    background-color: lightblue;
+    display: block;
+    margin: auto;
+}
