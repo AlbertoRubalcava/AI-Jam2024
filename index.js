@@ -41,5 +41,7 @@ d3.json("mydata.json", function (data) {
     .attr('fill', '#69a3b2');
 
   node.append("text")
-    .text(function (d) {return d.name});
+    .text(function (d) {return d.name})
+    .attr("dx",30)
+    .attr("dy",30);
 })
