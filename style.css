@@ -62,10 +62,6 @@ iframe{
     margin: 10px 0 5px;
 }
 
-.wrapper .sidebar .profile p{
-    color: rgb(85, 134, 153);
-    font-size: 14px;
-}
 
 .wrapper .sidebar ul li a{
     display: block;
@@ -80,6 +76,7 @@ iframe{
     color: #dee4ec;
     width: 30px;
     display: inline-block;
+    margin: auto;
 }
 .wrapper .sidebar ul li a:hover{
     color: #ffffff;
@@ -116,6 +113,8 @@ html, body, .parent-container {
     bottom: 25; 
     left: 40; 
     z-index: 10;
+    display: block;
+    margin: auto;
 }
 
 .bold{
@@ -123,12 +122,14 @@ html, body, .parent-container {
 }
 
 .unitbox {
+    display: block;
+    margin: auto;
     position: relative;
-    margin-top: 50px;
+    margin-top: 25Px;
     margin-left: 50px;
     text-align: center;
     padding: 25px 10px;
-    width: 200px;
+    width: 250px;
     height: 150px;
     box-shadow: 0px 0px 2px#9a9ba0;
     background-color: #ffff;
@@ -139,6 +140,7 @@ html, body, .parent-container {
     padding-top: 5px;
     text-align: bottom;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
     
     
 }
@@ -147,6 +149,7 @@ html, body, .parent-container {
     font-size: 20px;
     color:#55565a;
     font-family: Impact;
+    text-align: center;
 }
 
 .dropdown {
