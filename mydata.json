@@ -1,20 +1,21 @@
 {
-  "name": "Max",
+  "name": "COMP 110",
   "children": [
     {
-      "name": "Sylvia",
+      "name": "MATH 150A",
       "children": [
-        {"name": "Craig"},
-        {"name": "Robin"},
-        {"name": "Anna"}
-      ]
-    },
-    {
-      "name": "David",
-      "children": [
-        {"name": "Jeffy"},
-        {"name": "Buffy"}
+
+        {"name": "ENGL 115",
+        "children": [
+          {"name": "COMS 151",
+          "children":[
+            {"name": "NULL"}
+          ]
+          }
+          ]
+        
+        }
+        ]
+      }
       ]
     }
-  ]
-}

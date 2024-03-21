@@ -9,7 +9,7 @@ var canvas = d3.select("#main").append("svg")
     document.querySelector('.dropbtn').innerText = option;
   }
 var tree = d3.layout.tree()
-  .size([400,400]);
+  .size([200,400]);
 
 d3.json("mydata.json", function (data) {
   var nodes = tree.nodes(data);
