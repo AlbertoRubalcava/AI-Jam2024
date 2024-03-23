@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CourseCompass</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <!--Container div for all divs-->
@@ -50,29 +49,37 @@
                     <progress value="80" max="100" style="--value: 25; --max: 100;"></progress>
                 </div>
             </div>
-                <div class="currentBox">
-                    <p class="current">Current Schedule</p>
-                    <div class="currentClass">
-                        <P class="currentTitle">COMP 110/L</P>
-                        <p class="currentDesc">Introduction to Algorithms and Programming and Lab</p>
-                        <p class="currentUnit"> Units: 3/1 </p>
-                    </div>
-                    <div class="currentClass">
-                        <P class="currentTitle">MATH 150A</P>
-                        <p class="currentDesc">Calculus I </p>
-                        <p class="currentUnit"> Units: 5 </p>
-                    </div>
-                    <div class="currentClass">
-                        <P class="currentTitle">ENGL 115</P>
-                        <p class="currentDesc">Approaches to University Writing</p>
-                        <p class="currentUnit"> Units: 3 </p>
-                    </div>
-                    <div class="currentClass">
-                        <P class="currentTitle">POLS 155</P>
-                        <p class="currentDesc">American Political Institutions</p>
-                        <p class="currentUnit"> Units: 3 </p>
-                    </div>
+            <div class="currentBox">
+                <p class="current">Current Schedule</p>
+                <div class="currentClass" onclick="openPopup('COMP 110/L', 'Introduction to algorithms, their representation, design, structuring, analysis and optimization. Implementation of algorithms as structured programs in a high level language. Lab: 3 hours per week.')">
+                    <p class="currentTitle">COMP 110/L</p>
+                    <p class="currentDesc">Introduction to Algorithms and Programming and Lab</p>
+                    <p class="currentUnit"> Units: 3/1 </p>
                 </div>
+                <div class="currentClass" onclick="openPopup('MATH 150A', 'Limits, derivatives, and applications of differentiation. Definite and indefinite integrals. The fundamental theorem of calculus and applications of integration.')">
+                    <p class="currentTitle">MATH 150A</p>
+                    <p class="currentDesc">Calculus I </p>
+                    <p class="currentUnit"> Units: 5 </p>
+                </div>
+                <div class="currentClass" onclick="openPopup('ENGL 115', 'Expository prose writing with a focus on both content and form. Specific emphases include the exercise of logical thought and clear expression, the development of effective organizational strategies and the appropriate gathering and utilization of evidence. Includes instruction on diction, syntax and grammar, as well as the elements of prose style.')">
+                    <p class="currentTitle">ENGL 115</p>
+                    <p class="currentDesc">Approaches to University Writing</p>
+                    <p class="currentUnit"> Units: 3 </p>
+                </div>
+                <div class="currentClass" onclick="openPopup('POLS 155','Examination of the development and dynamics of American political institutions and political processes including a special emphasis on the role of minority groups.')">
+                    <p class="currentTitle">POLS 155</p>
+                    <p class="currentDesc">American Political Institutions</p>
+                    <p class="currentUnit"> Units: 3 </p>
+                </div>
+            </div>
+
+            <div id="popupContainer" class="popupContainer" onclick="closePopup()">
+                <div id="popupContent" class="popupContent" onclick="event.stopPropagation()">
+                    <!-- Content of the popup -->
+                    <h2 id="popupTitle"></h2>
+                    <p id="popupText"></p>
+                </div>
+            </div>
 
         </div> 
     

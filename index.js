@@ -8,6 +8,26 @@ var canvas = d3.select("#main").append("svg")
   function selectOption(option) {
     document.querySelector('.dropbtn').innerText = option;
   }
+
+  function openPopup(title,content) {
+    var popupTitle = document.getElementById("popupTitle");
+    var popupText = document.getElementById("popupText");
+
+    // Set the title and content of the popup
+    popupTitle.textContent = title;
+    popupText.textContent = content;
+    // Show the popup
+    var popupContainer = document.getElementById("popupContainer");
+    popupContainer.style.display = "block";
+}
+
+function closePopup() {
+    var popupContainer = document.getElementById("popupContainer");
+    popupContainer.style.display = "none";
+}
+
+
+
 var tree = d3.layout.tree()
   .size([200,400]);
 
