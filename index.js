@@ -65,3 +65,12 @@ d3.json("mydata.json", function (data) {
     .attr("dx",30)
     .attr("dy",30);
 })
+
+function Geeks(string) {
+  let myDiv = document.getElementById(string);
+  // creating button element
+  let button = document.createElement('BUTTON');
+  button.classList.add("course-body");
+  // appending button to div
+  myDiv.appendChild(button);;
+}
