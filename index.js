@@ -27,7 +27,7 @@ function closePopup() {
 }
 
 
-
+/*
 var tree = d3.layout.tree()
   .size([200,400]);
 
@@ -65,6 +65,7 @@ d3.json("mydata.json", function (data) {
     .attr("dx",30)
     .attr("dy",30);
 })
+*/
 
 function Geeks(string) {
   let myDiv = document.getElementById(string);
@@ -73,4 +74,29 @@ function Geeks(string) {
   button.classList.add("course-body");
   // appending button to div
   myDiv.appendChild(button);;
+  equalizeSemBodyHeights();
+}
+
+function equalizeSemBodyHeights() {
+  document.querySelectorAll('.year-body').forEach(function(yearBody) {
+      let maxHeight = 0;
+      const semBodies = yearBody.querySelectorAll('.sem-body');
+
+      // Reset all sem-body heights to auto to get the natural height
+      semBodies.forEach(function(semBody) {
+          semBody.style.height = 'auto';
+      });
+
+      // Find the tallest sem-body height
+      semBodies.forEach(function(semBody) {
+          if (semBody.offsetHeight > maxHeight) {
+              maxHeight = semBody.offsetHeight;
+          }
+      });
+
+      // Set all sem-body heights to the tallest found height
+      semBodies.forEach(function(semBody) {
+          semBody.style.height = `${maxHeight}px`;
+      });
+  });
 }
