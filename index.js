@@ -70,10 +70,10 @@ d3.json("mydata.json", function (data) {
 function Geeks(string) {
   let myDiv = document.getElementById(string);
   // creating button element
-  let button = document.createElement('BUTTON');
+  let button = document.createElement('DIV');
   button.classList.add("course-body");
   // appending button to div
-  myDiv.appendChild(button);;
+  myDiv.appendChild(button);
   equalizeSemBodyHeights();
 }
 
@@ -99,4 +99,24 @@ function equalizeSemBodyHeights() {
           semBody.style.height = `${maxHeight}px`;
       });
   });
+}
+
+function ShowTrash() {
+  console.log("test");
+  let button = document.getElementById('trash-can');
+  button.style.opacity = '1';
+  console.log("test");
+}
+
+function HideTrash() {
+  console.log("test");
+  let button = document.getElementById('trash-can');
+  button.style.opacity = '0';
+  console.log("test");
+}
+
+function DeleteParent(){
+  let element = document.getElementById('fall1-class1');
+  element.remove();
+  console.log("test");
 }

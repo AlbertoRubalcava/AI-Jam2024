@@ -362,7 +362,6 @@ html, body, .parent-container {
     margin-bottom: 1px;
     margin-top: 4px;
     background-color: #ecf4f7;
-    overflow: hidden;
     position: relative;
     text-align: center;
     border-width: 3px;
@@ -379,7 +378,18 @@ html, body, .parent-container {
     color:#55565a;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
-.break{
-    padding-top: px;
+#trash-can{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ecf4f7;
+    position: relative;
+    left: 52%;
+    bottom: 40%;
+    text-align: center;
+    border-width: 3px;
+    border-color: #b2ddee;
+    border-style: solid;
+    opacity: 0%;
 }
