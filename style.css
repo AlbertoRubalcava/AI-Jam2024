@@ -13,6 +13,8 @@ body{
     background: #eff1fa;
     padding:0%;
     font-size: clamp(1rem, 2vw, 1.2rem);
+    user-select: none;
+
     
 }
 iframe{
@@ -367,6 +369,7 @@ html, body, .parent-container {
     border-width: 3px;
     border-color: #b2ddee;
     border-style: solid;
+    user-select: all;
 }
 
 .sem-title{
@@ -378,7 +381,7 @@ html, body, .parent-container {
     color:#55565a;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#trash-can{
+.trash-can{
     display: inline-block;
     width: 15px;
     height: 15px;

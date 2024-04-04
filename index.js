@@ -1,13 +1,3 @@
-var canvas = d3.select("#main").append("svg")
-  .attr("width", 800)
-  .attr("height", 800)
-  .attr("class", "svg-style")
-  .append("g")
-    .attr("transform","translate(50,50)");
-
-  function selectOption(option) {
-    document.querySelector('.dropbtn').innerText = option;
-  }
 
   function openPopup(title,content) {
     var popupTitle = document.getElementById("popupTitle");
@@ -66,14 +56,19 @@ d3.json("mydata.json", function (data) {
     .attr("dy",30);
 })
 */
-
+let classNumber = 0;
 function Geeks(string) {
+  classNumber++;
   let myDiv = document.getElementById(string);
   // creating button element
-  let button = document.createElement('DIV');
-  button.classList.add("course-body");
-  // appending button to div
-  myDiv.appendChild(button);
+  myDiv.innerHTML += `
+  <div id="class${classNumber}" class="course-body" onmouseover="ShowTrash(${classNumber})" onmouseleave="HideTrash(${classNumber})" onclick="Geeks('fall1')"
+  id="fall1-class1" >
+      <button id="trash-can${classNumber}" class="trash-can" onclick="DeleteParent(${classNumber})">
+          <img src="big-trash-can.svg" height="10px" width="10px"/>
+      </button>
+  </div>`;
+  console.log(`added class${classNumber}`);
   equalizeSemBodyHeights();
 }
 
@@ -101,22 +96,19 @@ function equalizeSemBodyHeights() {
   });
 }
 
-function ShowTrash() {
-  console.log("test");
-  let button = document.getElementById('trash-can');
+function ShowTrash(int) {
+  let button = document.getElementById(`trash-can${int}`);
   button.style.opacity = '1';
-  console.log("test");
 }
 
-function HideTrash() {
-  console.log("test");
-  let button = document.getElementById('trash-can');
+function HideTrash(int) {
+  let button = document.getElementById(`trash-can${int}`);
   button.style.opacity = '0';
-  console.log("test");
+  console.log(`deleted class${int}`);
 }
 
-function DeleteParent(){
-  let element = document.getElementById('fall1-class1');
+function DeleteParent(int){
+  let element = document.getElementById(`class${int}`);
   element.remove();
-  console.log("test");
+  console.log(`deleted class${int}`);
 }
