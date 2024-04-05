@@ -58,6 +58,7 @@ d3.json("mydata.json", function (data) {
 */
 let classNumber = 0;
 function Geeks(string) {
+  /**
   classNumber++;
   let myDiv = document.getElementById(string);
   // creating button element
@@ -69,7 +70,7 @@ function Geeks(string) {
       </button>
   </div>`;
   console.log(`added class${classNumber}`);
-  equalizeSemBodyHeights();
+   */
 }
 
 function equalizeSemBodyHeights() {
@@ -115,6 +116,10 @@ function DeleteParent(int){
 
 function allowDrop(ev) {
   ev.preventDefault();
+}
+
+function dontAllowDrop(ev) {
+  return;
 }
 
 function drag(ev) {

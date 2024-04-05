@@ -361,6 +361,8 @@ html, body, .parent-container {
     border-width: 3px;
     border-color: #b2ddee;
     border-style: solid;
+    user-select: none;
+    
 }
 
 .sem-title{
