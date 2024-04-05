@@ -171,10 +171,11 @@ html, body, .parent-container {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 5px;
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: none;
     cursor: pointer;
+    justify-content: space-between;
   }
   
 
@@ -185,6 +186,8 @@ html, body, .parent-container {
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    left:50%;
+    transform: translateX(-20%);
   }
   
 
@@ -199,10 +202,17 @@ html, body, .parent-container {
   .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
+#padding_icon{
+    position:relative;
+    margin-left: 50px;
+}
   
  
   .dropdown:hover .dropdown-content {
     display: block;
+}
+#plan_drop{
+    cursor: pointer;
 }
   
 
@@ -415,4 +425,42 @@ html, body, .parent-container {
 
 .trash-can:hover img{
     filter: brightness(0) saturate(100%) invert(13%) sepia(97%) saturate(7477%) hue-rotate(356deg) brightness(100%) contrast(119%);
+}
+
+.nav_planning{
+    position: relative;
+    display: inline-block;
+    font-size: large;
+    font-weight: 600;
+    padding-top: 10px;
+    padding: 25px 4rem;
+}
+
+.nav_planningbtn{
+    position: relative;
+    display: inline-block;
+    font-size: large;
+    font-weight: 600;
+    padding-top: 10px;
+    padding: 25px 4rem;
+}
+
+#gradyear{
+    background-color: #eff1fa;
+    border-width: 0px;
+}
+
+#pointer{
+    cursor: pointer;
+}
+
+.hide_planning{
+    position: relative;
+    display: inline-block;
+    font-size: large;
+    font-weight: 600;
+    padding-top: 10px;
+    padding: 25px 4rem;
+    background-color: #eff1fa;
+    border-width: 0px;
 }

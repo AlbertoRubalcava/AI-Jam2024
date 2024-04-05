@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CourseCompass</title>
@@ -17,6 +18,27 @@
         </div>
         <!--div for main body-->
         <div class = "main-body" id="main">
+            <div>
+                <span>
+                    <p class="nav_planning">REGENERATE</p>
+                    <span>
+                    <div class="dropdown">
+                        <button class="nav_planningbtn" id="gradyear">GRADUATION YEAR <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="dropdown-content" id="plan_drop">
+                          <a href="#" onclick="selectOptionPlan('FALL 2024')">FALL 2024</a>
+                          <a href="#" onclick="selectOptionPlan('SPRING 2025')">SPRING 2025</a>
+                          <a href="#" onclick="selectOptionPlan('FALL 2025')">FALL 2025</a>
+                          <a href="#" onclick="selectOptionPlan('SPRING 2026')">SPRING 2026</a>
+                          <a href="#" onclick="selectOptionPlan('FALL 2026')">FALL 2026</a>
+                          <a href="#" onclick="selectOptionPlan('SPRING 2027')">SPRING 2027</a>
+                        </div>
+                      </div>
+                    </span>
+                    <button class="hide_planning" onclick="hideDIV()" id="pointer">SHOW CURRENT YEARS ONLY</button>
+                    <P class="nav_planning">SHOW ALL YEARS</P>
+                </span>
+
+            </div>
             <div id="first-year" class="year-body">
                 <p class="current">FIRST YEAR</p>
                 <div id="fall1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">

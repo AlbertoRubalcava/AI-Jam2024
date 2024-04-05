@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CourseCompass</title>
@@ -30,8 +31,10 @@
                 <div class="unitbox">
                     <p class="uTakenTitle">GRADUATION</p>
                     <p class="uTakenTitle">YEAR</p>
+                    <span>
                     <div class="dropdown">
-                        <button class="dropbtn">Select Year</button>
+                        <button class="dropbtn" id="">Select Year <i class="fa-solid fa-chevron-down" style="margin-left: 3px;"></i></button>
+
                         <div class="dropdown-content">
                           <a href="#" onclick="selectOption('Fall 2024')">Fall 2024</a>
                           <a href="#" onclick="selectOption('Spring 2025')">Spring 2025</a>
@@ -40,6 +43,7 @@
                           <a href="#" onclick="selectOption('Fall 2026')">Fall 2026</a>
                           <a href="#" onclick="selectOption('Spring 2027')">Spring 2027</a>
                         </div>
+                    </span>
                       </div>
                 </div>
                 <div class="unitbox">

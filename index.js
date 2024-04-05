@@ -1,3 +1,38 @@
+function selectOption(option) {
+  document.querySelector('.dropbtn').innerText = option;
+  document.querySelector('.dropbtn').innerHTML = `${option} <i class="fa-solid fa-chevron-down"></i>`;
+}
+
+function selectOptionPlan(option) {
+  document.querySelector('.nav_planningbtn').innerText = option;
+  document.querySelector('.nav_planningbtn').innerHTML = `${option} <i class="fa-solid fa-chevron-down"></i>`;
+}
+
+function hideDIV() {
+  var x = document.getElementById("fall1");
+  var y = document.getElementById("spring1");
+  var z = document.getElementById("summer1");
+  //hide fall
+  if (x.style.display === "none") {
+    x.style.display = "inline-block";
+    document.querySelector('.hide_planning').innerText = 'SHOW ONLY CURRENT YEARS';
+  } else {
+    x.style.display = "none";
+    document.querySelector('.hide_planning').innerText = 'SHOW OLD YEARS';
+  }
+ //hide spring
+  if (y.style.display === "none") {
+    y.style.display = "inline-block";
+  } else {
+    y.style.display = "none";
+  }
+  //hide summer
+  if (z.style.display === "none") {
+    z.style.display = "inline-block";
+  } else {
+    z.style.display = "none";
+  }
+}
 
   function openPopup(title,content) {
     var popupTitle = document.getElementById("popupTitle");
@@ -15,46 +50,6 @@ function closePopup() {
     popupContainer.style.display = "none";
 }
 
-
-/*
-var tree = d3.layout.tree()
-  .size([200,400]);
-
-d3.json("mydata.json", function (data) {
-  var nodes = tree.nodes(data);
-  var links = tree.links(nodes);
-
-  var diagonal = d3.svg.diagonal()
-  .projection(function (d) {return [d.y+70,d.x];})
-
-  canvas.selectAll(".link")
-    .data(links)
-    .enter()
-    .append("path")
-    .attr("class", "link")
-    .attr("fill","none")
-    .attr("stroke", "black")
-    .attr("d", diagonal);
-  
-  var node = canvas.selectAll(".node")
-    .data(nodes)
-    .enter()
-    .append("g")
-      .attr("class", "node")
-      .attr("transform", function (d) {return "translate(" + (d.y) + "," +(d.x-25)+")";})
-    
-  node.append("rect")
-    .attr("width",100)
-    .attr("height", 50)
-    .attr("stroke","black")
-    .attr('fill', '#69a3b2');
-
-  node.append("text")
-    .text(function (d) {return d.name})
-    .attr("dx",30)
-    .attr("dy",30);
-})
-*/
 let classNumber = 0;
 function Geeks(string) {
   /**
