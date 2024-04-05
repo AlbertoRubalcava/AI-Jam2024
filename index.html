@@ -51,37 +51,37 @@
             </div>
             <div class="currentBox">
                 <p class="current">Current Schedule</p>
-                <div class="currentClass" onclick="openPopup('COMP 110/L', 'Introduction to algorithms, their representation, design, structuring, analysis and optimization. Implementation of algorithms as structured programs in a high level language. Lab: 3 hours per week.')">
+                <div class="currentClass" onclick="openPopup('Computer Science 333', 'Discussion of issues in the design, implementation and use of high-level programming languages through a historical framework, including how languages reflect different design philosophies and use requirements and the technical issues in the design of main abstraction constructs of programming languages. Other approaches to imperative or object-oriented programming, functional programming, logical programming and parallel programming.')">
                     <p class="currentTitle">COMP 333</p>
-                    <p class="currentDesc">Introduction to Algorithms and Programming and Lab</p>
+                    <p class="currentDesc">Concepts of Programming Languages</p>
                     <p class="currentUnit"> Units: 3 </p>
                 </div>
-                <div class="currentClass" onclick="openPopup('MATH 150A', 'Limits, derivatives, and applications of differentiation. Definite and indefinite integrals. The fundamental theorem of calculus and applications of integration.')">
+                <div class="currentClass" onclick="openPopup('Computer Science 310', 'Study of the relation of languages (defined as sets of strings) and machines for processing these languages, with emphasis on classes of languages and corresponding classes of machines. Phrase structure languages and grammar. Types of grammar and classes of languages. Regular languages and finite state automata. Context-free languages and pushdown automata. Unrestricted languages and Turing Machines. Computability models of Turing, Church, Markov and McCarthy. Applications to programming languages, compiler design, and program design and testing.')">
                     <p class="currentTitle">COMP 310</p>
-                    <p class="currentDesc">Calculus I </p>
+                    <p class="currentDesc">Automata, Languages and Computation</p>
                     <p class="currentUnit"> Units: 3 </p>
                 </div>
-                <div class="currentClass" onclick="openPopup('ENGL 115', 'Expository prose writing with a focus on both content and form. Specific emphases include the exercise of logical thought and clear expression, the development of effective organizational strategies and the appropriate gathering and utilization of evidence. Includes instruction on diction, syntax and grammar, as well as the elements of prose style.')">
+                <div class="currentClass" onclick="openPopup('Computer Science 322/L', 'Examination of the principal types of systems, including batch, multi-programming and time-sharing. Discusses networked system. Considers the salient problems associated with implementing systems, including interrupt of event driven systems, multitasking, storage and database management and input-output. Emphasizes some of the simple algorithms used to solve common problems encountered, such as deadlocks, queue service and multiple access to data. Projects are implemented to reinforce the lectures. One 3-hour lab per week.')">
                     <p class="currentTitle">COMP 322/L</p>
-                    <p class="currentDesc">Approaches to University Writing</p>
+                    <p class="currentDesc">Introduction to Operating Systems and System Architecture and Lab</p>
                     <p class="currentUnit"> Units: 3/1 </p>
                 </div>
-                <div class="currentClass" onclick="openPopup('POLS 155','Examination of the development and dynamics of American political institutions and political processes including a special emphasis on the role of minority groups.')">
+                <div class="currentClass" onclick="openPopup('General Education Honors 333','This course aims to provide a common experience to all GE Honors students and lay a critical foundation for integrative, critical and reflective thinking. The team-taught course adopts an interdisciplinary perspective and asks students to carefully evaluate the means by which knowledge is gained across different disciplines. Students will explicitly consider how logic and evidence operate across fields of study to move us closer to answering humanity’s central questions.')">
                     <p class="currentTitle">GEH 333</p>
-                    <p class="currentDesc">American Political Institutions</p>
+                    <p class="currentDesc">Interdisciplinary Inquiries: Ways of Knowing</p>
                     <p class="currentUnit"> Units: 3 </p>
                 </div>
-                <div class="currentClass" onclick="openPopup('POLS 155','Examination of the development and dynamics of American political institutions and political processes including a special emphasis on the role of minority groups.')">
+                <div class="currentClass" onclick="openPopup('Chicano Studies 310','Study of the cultural, instrumental and musical aspects of predominant regional musical styles of Mexico from Pre-Cuauhtemoc to contemporary times.')">
                     <p class="currentTitle">CHS 310</p>
-                    <p class="currentDesc">American Political Institutions</p>
+                    <p class="currentDesc">Regional Music of Mexico</p>
                     <p class="currentUnit"> Units: 3 </p>
                 </div>
             </div>
 
             <div id="popupContainer" class="popupContainer" onclick="closePopup()">
                 <div id="popupContent" class="popupContent" onclick="event.stopPropagation()">
-                    <!-- Content of the popup -->
-                    <h2 id="popupTitle"></h2>
+                    <p class="close_X"onclick="closePopup()">X</p>
+                    <h2 id="popupTitle" ></h2>
                     <p id="popupText"></p>
                 </div>
             </div>

@@ -3,10 +3,9 @@
     var popupTitle = document.getElementById("popupTitle");
     var popupText = document.getElementById("popupText");
 
-    // Set the title and content of the popup
     popupTitle.textContent = title;
     popupText.textContent = content;
-    // Show the popup
+
     var popupContainer = document.getElementById("popupContainer");
     popupContainer.style.display = "block";
 }

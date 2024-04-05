@@ -14,6 +14,7 @@ body{
     padding:0%;
     font-size: clamp(1rem, 2vw, 1.2rem);
     user-select: none;
+
 }
 
 iframe{
@@ -124,6 +125,7 @@ html, body, .parent-container {
     justify-content: center; 
     align-items: center; 
     gap: 25px; 
+    user-select: none;
 }
 
 .unitbox {
@@ -230,9 +232,11 @@ html, body, .parent-container {
     box-shadow: 0px 0px 2px#9a9ba0;
     background-color: #ffff;
     flex-wrap: wrap; 
+    
 }
 
 .currentClass{
+    cursor: pointer;
     display: inline-block;
     width: calc(30% - 15px); 
     margin-right: 15px; 
@@ -246,14 +250,14 @@ html, body, .parent-container {
 }
 
 .currentTitle{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-top: 15px;
 
 }
 
 .currentDesc{
-    font-size: 1.2rem;
+    font-size: .95rem;
     font-weight: 200;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 10px;
@@ -272,7 +276,7 @@ html, body, .parent-container {
     right: 0;
     display: block;
     margin: auto;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 
@@ -311,6 +315,22 @@ html, body, .parent-container {
 #popupText{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+}
+
+.close_X{
+    position: absolute;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-right: 10px;
+    top:0;
+    right:0;
+    justify-content: right;
+    color:#55565a;
+    cursor:pointer;
+}
+
+.close_X:hover{
+    color:red;
 }
 
 .sem-body{
@@ -362,6 +382,7 @@ html, body, .parent-container {
     border-color: #b2ddee;
     border-style: solid;
     user-select: none;
+    cursor: grab;
     
 }
 
@@ -375,17 +396,23 @@ html, body, .parent-container {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .trash-can{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
+    display: flex;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background-color: #ecf4f7;
     position: relative;
-    left: 52%;
-    bottom: 40%;
+    left: 95%;
+    bottom: 35%;
     text-align: center;
-    border-width: 3px;
+    justify-content: center;
+    border-width: 2px;
     border-color: #b2ddee;
     border-style: solid;
     opacity: 0%;
+    cursor:pointer;
+}
+
+.trash-can:hover img{
+    filter: brightness(0) saturate(100%) invert(13%) sepia(97%) saturate(7477%) hue-rotate(356deg) brightness(100%) contrast(119%);
 }
