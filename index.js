@@ -15,10 +15,10 @@ function hideDIV() {
   //hide fall
   if (x.style.display === "none") {
     x.style.display = "inline-block";
-    document.querySelector('.hide_planning').innerText = 'SHOW ONLY CURRENT YEARS';
+    document.querySelector('.hide_planning').innerText = 'HIDE PREVIOUS YEARS';
   } else {
     x.style.display = "none";
-    document.querySelector('.hide_planning').innerText = 'SHOW OLD YEARS';
+    document.querySelector('.hide_planning').innerText = 'SHOW PREVIOUS YEARS';
   }
  //hide spring
   if (y.style.display === "none") {

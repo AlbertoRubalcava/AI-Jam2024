@@ -383,7 +383,7 @@ html, body, .parent-container {
     width: 75%;
     height: 38px;
     border-radius: 3px;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
     margin-top: 4px;
     background-color: #ecf4f7;
     position: relative;
@@ -448,6 +448,7 @@ html, body, .parent-container {
 #gradyear{
     background-color: #eff1fa;
     border-width: 0px;
+    cursor: pointer;
 }
 
 #pointer{
@@ -463,4 +464,11 @@ html, body, .parent-container {
     padding: 25px 4rem;
     background-color: #eff1fa;
     border-width: 0px;
+}
+
+.classTitle{
+    font-weight: 600;
+    font-family: Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width:100%;
 }

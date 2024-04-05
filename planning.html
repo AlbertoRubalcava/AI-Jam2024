@@ -34,8 +34,8 @@
                         </div>
                       </div>
                     </span>
-                    <button class="hide_planning" onclick="hideDIV()" id="pointer">SHOW CURRENT YEARS ONLY</button>
-                    <P class="nav_planning">SHOW ALL YEARS</P>
+                    <button class="hide_planning" onclick="hideDIV()" id="pointer">HIDE PREVIOUS YEARS</button>
+                    <p class="nav_planning">EXPAND ALL CLASS DESCRIPTIONS</p>
                 </span>
 
             </div>
@@ -46,9 +46,12 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(0)" onmouseleave="HideTrash(0)" onclick="Geeks('fall1')"
                     ondragover="dontAllowDrop()"
                     id="class0" >
+
                         <button id="trash-can0" class="trash-can" onclick="DeleteParent(0)">
                             <img src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
+
+                        <P class="classTitle">COMP 110/L</P>
                     </div>
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(1)" onmouseleave="HideTrash(1)" onclick="Geeks('fall1')"
                     ondragover="dontAllowDrop()"
@@ -56,6 +59,7 @@
                         <button id="trash-can1" class="trash-can" onclick="DeleteParent(1)">
                             <img src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
+                        <P class="classTitle">MATH 150A</P>
                     </div>
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(2)" onmouseleave="HideTrash(2)" onclick="Geeks('fall1')"
                     ondragover="dontAllowDrop()"
