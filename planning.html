@@ -19,28 +19,16 @@
         <div class = "main-body" id="main">
             <div id="first-year" class="year-body">
                 <p class="current">FIRST YEAR</p>
-                <div id="fall1" class="sem-body">
+                <div id="fall1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <p class="sem-title">FALL</p>
-                    <div draggable="true" class="course-body" onmouseover="ShowTrash(0)" onmouseleave="HideTrash(0)"
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(0)" onmouseleave="HideTrash(0)" onclick="Geeks('fall1')"
                     id="class0" >
                         <button id="trash-can0" class="trash-can" onclick="DeleteParent(0)">
                             <img src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
                     </div>
-                    <div draggable="true" class="course-body" onmouseover="ShowTrash(1)" onmouseleave="HideTrash(1)"
-                    id="class1" >
-                        <button id="trash-can1" class="trash-can" onclick="DeleteParent(1)">
-                            <img src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-                    </div>
-                    <div draggable="true" class="course-body" onmouseover="ShowTrash(2)" onmouseleave="HideTrash(2)"
-                    id="class2" >
-                        <button id="trash-can2" class="trash-can" onclick="DeleteParent(2)">
-                            <img src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-                    </div>
                 </div>
-                <div id="spring1" class="sem-body" >
+                <div id="spring1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <p class="sem-title">SPRING</p>
                     <div class="course-body"  onclick="Geeks('spring1')"></div>
                 </div>

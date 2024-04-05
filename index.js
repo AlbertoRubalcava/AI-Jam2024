@@ -63,7 +63,7 @@ function Geeks(string) {
   // creating button element
   myDiv.innerHTML += `
   <div id="class${classNumber}" class="course-body" onmouseover="ShowTrash(${classNumber})" onmouseleave="HideTrash(${classNumber})" onclick="Geeks('fall1')"
-  id="fall1-class1" >
+  id="fall1-class1" draggable="true" ondragstart="drag(event)">
       <button id="trash-can${classNumber}" class="trash-can" onclick="DeleteParent(${classNumber})">
           <img src="big-trash-can.svg" height="10px" width="10px"/>
       </button>
@@ -111,4 +111,18 @@ function DeleteParent(int){
   let element = document.getElementById(`class${int}`);
   element.remove();
   console.log(`deleted class${int}`);
+}
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
 }
