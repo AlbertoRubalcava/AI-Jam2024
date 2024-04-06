@@ -1,3 +1,4 @@
+var yearsAdded = 0;
 function selectOption(option) {
   document.querySelector('.dropbtn').innerText = option;
   document.querySelector('.dropbtn').innerHTML = `${option} <i class="fa-solid fa-chevron-down"></i>`;
@@ -210,6 +211,81 @@ function setEqualHeight() {
   equalizeSemBodyHeights();
  }
 
+ function addYear(ev){
+  
+  var element = ev.target;
+  if(element.classList.contains("summerTitle")){
+    var button = element.parentNode;
+    var body = button.parentNode;
+
+  } else if(element.classList.contains("summer-button")){
+    var button = element;
+    var body = button.parentNode;
+  }
+  button.remove();
+
+  var yearnum = "YEAR";
+  switch(yearsAdded){
+    case 0:
+      yearnum = "FIFTH" + yearnum;
+      break;
+    case 1:
+      yearnum = "SIXTH" + yearnum;
+      break;
+    case 2:
+      yearnum = "SEVENTH" + yearnum;
+      break;
+    case 3:
+      yearnum = "EIGHTH" + yearnum;
+      break;
+    case 4:
+      yearnum = "NINTH" + yearnum;
+      break;
+  } 
+  yearsAdded++;
+  
+  body.innerHTML += `<div id="fifth-year" class="year">
+  <p class="current">${yearnum}
+      <button class="summer-button" onclick="addSummer(event)"><p class="summerTitle">ADD SUMMER</p></button>
+  </p>
+  
+
+  <!--
+
+      FIRST FALL
+
+  -->
+  <div class="year-body">
+
+  <div id="fall1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+      <p class="sem-title">FALL</p>
+
+  </div>
+
+  <!--
+
+      FIRST SPRING
+
+  -->
+
+
+  <div id="spring1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+      <p class="sem-title">SPRING</p>
+
+  </div>
+  
+  <!--
+
+      FIRST SUMMER
+
+  -->
+  </div>
+</div>
+<button class="add-year-button" onclick="addYear(event)"><p class="summerTitle">ADD YEAR</p></button>`;
+ }
+
  function switchButtonRemove(ev){
   var element = ev.target;
   if(element.classList.contains("summerTitle")){
@@ -254,4 +330,8 @@ function setEqualHeight() {
   }
   button.remove();
   yearTitle.innerHTML+= `<button class="summer-button" onclick="addSummer(event)"><p class="summerTitle">ADD SUMMER</p></button>`;
+ }
+
+ function buttonRemove(ev){
+  
  }
