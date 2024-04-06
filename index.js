@@ -93,27 +93,50 @@ function equalizeSemBodyHeights() {
 
 function ShowLock(ev) {
   let element = ev.currentTarget;
-  let button = element.querySelector('.lock');
-  button.style.opacity = '1';
+  let lock = element.querySelector('.lock');
+  lock.style.opacity = '.2';
 }
+
 
 function HideLock(ev) {
   let element = ev.currentTarget;
-  let button = element.querySelector('.lock');
-  button.style.opacity = '0';
+  let lock = element.querySelector('.lock');
+  lock.style.opacity = '0';
 }
 
 function lockParent(ev){
-  if(ev.target.classList.contains('.image')){
+  console.log(ev.target);
+  if(ev.target.classList.contains('image')){
     var lock = ev.target.parentNode;
-  } else
-  var lock = ev.target;
-
+  } else{
+    var lock = ev.target;
+  }
   var course = lock.parentNode;
-  
+  console.log(course);
   course.setAttribute("draggable", "false");
-
+  course.setAttribute("onmouseover", "{return false;}")
+  course.setAttribute("onmouseleave", "{return false;}")
+  lock.setAttribute("onclick", "unlockParent(event)");
+  lock.style.opacity = '1';
   console.log("locked");
+}
+
+function unlockParent(ev){
+  console.log(ev.target);
+  if(ev.target.classList.contains('image')){
+    var lock = ev.target.parentNode;
+  } else{
+    var lock = ev.target;
+  }
+  var course = lock.parentNode;
+  console.log(course);
+  course.setAttribute("draggable", "true");
+  course.setAttribute("onmouseover", "ShowLock(event)");
+  course.setAttribute("onmouseleave", "HideLock(event)");
+  lock.setAttribute("onclick", "lockParent(event)");
+  lock.style.opacity = '0';
+  console.log("unlocked");
+
 }
 
 function allowDrop(ev) {
