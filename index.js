@@ -91,29 +91,30 @@ function equalizeSemBodyHeights() {
   });
 }
 
-function ShowTrash(int) {
-  let button = document.getElementById(`trash-can${int}`);
+function ShowTrash(ev) {
+  let element = ev.currentTarget;
+  let button = element.querySelector('.trash-can');
   button.style.opacity = '1';
 }
 
-function HideTrash(int) {
-  let button = document.getElementById(`trash-can${int}`);
+function HideTrash(ev) {
+  let element = ev.currentTarget;
+  let button = element.querySelector('.trash-can');
   button.style.opacity = '0';
-  console.log(`deleted class${int}`);
 }
 
-function DeleteParent(int){
-  let element = document.getElementById(`class${int}`);
+function DeleteParent(ev){
+  let element = ev.target;
+  if(element.classList.contains("image")){
+    element = element.parentNode;
+  }
+  element = element.parentNode;
+  console.log(element);
   element.remove();
-  console.log(`deleted class${int}`);
 }
 
 function allowDrop(ev) {
   ev.preventDefault();
-}
-
-function dontAllowDrop(ev) {
-  return;
 }
 
 function drag(ev) {
@@ -121,7 +122,44 @@ function drag(ev) {
 }
 
 function drop(ev) {
+  var elem = ev.target;
+  if(elem.classList.contains("course-body")){
+    elem = elem.parentNode;
+  } else if(elem.classList.contains("trash-can")){
+    elem = elem.parentNode;
+    elem = elem.parentNode;
+  } else if(elem.classList.contains("classTitle")){
+    elem = elem.parentNode;
+    elem = elem.parentNode;
+  } else if(elem.classList.contains("sem-title")){
+    elem = elem.parentNode;
+  }
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
+  var course = document.getElementById(data);
+  console.log(course);
+  elem.appendChild(course);
+  console.log(elem);
+  setEqualHeight();
+}
+
+function setEqualHeight() {
+  // Select all columns
+  var columns = document.querySelectorAll('.sem-body');
+
+  // Initialize variable to store tallest height
+  var maxHeight = 0;
+
+  // Loop through each column to find the tallest height
+  columns.forEach(function(column) {
+      var height = column.offsetHeight;
+      if (height > maxHeight) {
+          maxHeight = height;
+      }
+  });
+
+  // Set the same height for all columns
+  columns.forEach(function(column) {
+      column.style.height = maxHeight + 'px';
+  });
 }

@@ -471,4 +471,11 @@ html, body, .parent-container {
     font-family: Geneva, Tahoma, sans-serif;
     text-align: center;
     width:100%;
+    bottom: 45%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    border-color: #b2ddee;
+    cursor:pointer;
 }
