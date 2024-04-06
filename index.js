@@ -163,3 +163,46 @@ function setEqualHeight() {
       column.style.height = maxHeight + 'px';
   });
 }
+ equalizeSemBodyHeights();
+
+ function addSummer(ev){
+  var element = ev.target;
+  if(element.classList.contains("summerTitle")){
+    var yearTitle = element.parentNode.parentNode;
+    var year = yearTitle.parentNode;
+  } else if(element.classList.contains("summer-button")){
+    var yearTitle = element.parentNode;
+    var year = yearTitle.parentNode;
+  }
+  
+  year.innerHTML += `<div id="summer1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p class="sem-title">SUMMER</p>
+</div>`;
+  equalizeSemBodyHeights();
+  switchButton(yearTitle);
+ }
+
+ function switchButton(element){
+  console.log(element);
+  var summerButton = element.querySelector('.summer-button');
+  console.log(summerButton);
+  summerButton.remove();
+  element.innerHTML+= `<button class="summer-button" onclick="removeSummer(event)"><p class="summerTitle">REMOVE SUMMER</p></button>`;
+  console.log("button removed")
+ }
+
+ function removeSummer(ev){
+  var element = ev.target;
+  if(element.classList.contains("summerTitle")){
+    var yearTitle = element.parentNode.parentNode;
+    var year = yearTitle.parentNode;
+  } else if(element.classList.contains("summer-button")){
+    var yearTitle = element.parentNode;
+    var year = yearTitle.parentNode;
+  }
+  
+  year.querySelector('.sum-body').remove();
+
+  equalizeSemBodyHeights();
+  switchButton(yearTitle);
+ }

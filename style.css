@@ -358,6 +358,21 @@ html, body, .parent-container {
     display: inline-block;
     flex-direction: column;
 }
+.sum-body{
+    width: calc(30% - 15px);
+    margin-right: 30px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    background-color: #fff6ed;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-width: 3px;
+    border-color: #e69959;
+    border-style: solid;
+    display: inline-block;
+    flex-direction: column;
+}
 
 .year-body{
     display: inline-block;
@@ -486,5 +501,36 @@ html, body, .parent-container {
     bottom: -12%;
     text-align: center;
     justify-content: center;
+    cursor:pointer;
+}
+
+.summer-button{
+    display: flex;
+    width: 100px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: #ecf4f7;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    text-align: center;
+    justify-content: center;
+    border-width: 2px;
+    border-color: #b2ddee;
+    border-style: solid;
+    cursor:pointer;
+}
+
+.summerTitle{
+    font-weight: 600;
+    font-family: Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width:100%;
+    bottom: 10%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    border-color: #b2ddee;
     cursor:pointer;
 }
