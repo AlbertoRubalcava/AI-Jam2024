@@ -166,6 +166,7 @@ function setEqualHeight() {
  equalizeSemBodyHeights();
 
  function addSummer(ev){
+  
   var element = ev.target;
   if(element.classList.contains("summerTitle")){
     var yearTitle = element.parentNode.parentNode;
@@ -174,21 +175,27 @@ function setEqualHeight() {
     var yearTitle = element.parentNode;
     var year = yearTitle.parentNode;
   }
+  switchButtonRemove(ev);
   
-  year.innerHTML += `<div id="summer1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+  year.innerHTML += `<div id="summer1" class="sem-body summer" ondrop="drop(event)" ondragover="allowDrop(event)">
   <p class="sem-title">SUMMER</p>
 </div>`;
   equalizeSemBodyHeights();
-  switchButton(yearTitle);
  }
 
- function switchButton(element){
-  console.log(element);
-  var summerButton = element.querySelector('.summer-button');
-  console.log(summerButton);
-  summerButton.remove();
-  element.innerHTML+= `<button class="summer-button" onclick="removeSummer(event)"><p class="summerTitle">REMOVE SUMMER</p></button>`;
-  console.log("button removed")
+ function switchButtonRemove(ev){
+  var element = ev.target;
+  if(element.classList.contains("summerTitle")){
+    var button = element.parentNode;
+    var yearTitle = button.parentNode;
+    var year = button.parentNode.parentNode;
+  } else if(element.classList.contains("summer-button")){
+    var button = element;
+    var yearTitle = button.parentNode;
+    var year = button.parentNode.parentNode;
+  }
+  button.remove();
+  yearTitle.innerHTML+= `<button class="summer-button" onclick="removeSummer(event)"><p class="summerTitle">REMOVE SUMMER</p></button>`;
  }
 
  function removeSummer(ev){
@@ -200,9 +207,24 @@ function setEqualHeight() {
     var yearTitle = element.parentNode;
     var year = yearTitle.parentNode;
   }
+  switchButtonAdd(ev);
   
-  year.querySelector('.sum-body').remove();
-
+  var summer = year.querySelector('.summer');
+  summer.remove();
   equalizeSemBodyHeights();
-  switchButton(yearTitle);
+ }
+
+ function switchButtonAdd(ev){
+  var element = ev.target;
+  if(element.classList.contains("summerTitle")){
+    var button = element.parentNode;
+    var yearTitle = button.parentNode;
+    var year = button.parentNode.parentNode;
+  } else if(element.classList.contains("summer-button")){
+    var button = element;
+    var yearTitle = button.parentNode;
+    var year = button.parentNode.parentNode;
+  }
+  button.remove();
+  yearTitle.innerHTML+= `<button class="summer-button" onclick="addSummer(event)"><p class="summerTitle">ADD SUMMER</p></button>`;
  }
