@@ -46,7 +46,7 @@
 
             -->
 
-            <div id="first-year" class="year-body">
+            <div id="first-year" class="year">
                 <p class="current">FIRST YEAR
                     <button class="summer-button" onclick="addSummer(event)"><p class="summerTitle">ADD SUMMER</p></button>
                 </p>
@@ -57,6 +57,201 @@
                     FIRST FALL
 
                 -->
+                <div class="year-body">
+
+                <div id="fall1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                    <p class="sem-title">FALL</p>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
+                    id="class0" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="lock.webp" height="20px" width="20px"/>
+                        </button>
+
+                        <P class="classTitle">COMP 110/L</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
+                    id="class1" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="lock.webp" height="20px" width="20px"/>
+                        </button>
+
+                        <P class="classTitle">MATH 150B/L</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
+                    id="class2" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="lock.webp" height="20px" width="20px"/>
+                        </button>
+
+                        <P class="classTitle">GE</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
+                    id="class3" ondragstart="return false;" ondrop="return false;">
+
+                        
+
+                        <P class="classTitle">GE</P>
+                        <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="lock.webp" height="20px" width="20px"/>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!--
+
+                    FIRST SPRING
+
+                -->
+
+
+                <div id="spring1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                    <p class="sem-title">SPRING</p>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class5" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">COMP 182/L</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class6" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">COMP 122/L</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class7" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">PHIL 230</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class8" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">GE</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class9" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">GE</P>
+                    </div>
+
+                </div>
+                
+                <!--
+
+                    FIRST SUMMER
+
+                -->
+                <!--
+                    <div id="summer1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                    <p class="sem-title">SUMMER</p>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class10" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">COMP 110/L</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class11" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">COMP 110/L</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class12" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">COMP 110/L</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class13" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">COMP 110/L</P>
+                    </div>
+
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
+                    id="class14" ondragstart="return false;" ondrop="return false;">
+
+                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
+                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                        </button>
+
+                        <P class="classTitle">COMP 110/L</P>
+                    </div>
+
+                </div>
+                -->
+                </div>
+            </div>
+
+            <!--
+
+                SECOND YEAR
+
+            -->
+
+            <div id="second-year" class="year">
+                <p class="current">SECOND YEAR
+                    <button class="summer-button" onclick="addSummer(event)"><p class="summerTitle">ADD SUMMER</p></button>
+                </p>
+                
+
+                <!--
+
+                    FIRST FALL
+
+                -->
+                <div class="year-body">
 
                 <div id="fall1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
 
@@ -229,205 +424,7 @@
 
                 </div>
                 -->
-            </div>
-
-            <!--
-
-                SECOND YEAR
-
-            -->
-
-            <div id="second-year" class="year-body">
-                <p class="current">SECOND YEAR</p>
-
-                <!--
-
-                    FIRST FALL
-
-                -->
-
-                <div id="fall2" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
-
-                    <p class="sem-title">FALL</p>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class15" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle"> COMP 282</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class16" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 256/L</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class17" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 222</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class18" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">MATH 262</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class19" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">GE</P>
-                    </div>
-
                 </div>
-
-                <!--
-
-                    FIRST SPRING
-
-                -->
-
-
-                <div id="spring2" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
-
-                    <p class="sem-title">SPRING</p>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class20" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP  322/L</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class21" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 310</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class22" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">GE</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class23" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">GE</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class24" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">GE</P>
-                    </div>
-
-                </div>
-                
-                <!--
-
-                    FIRST SUMMER
-
-                -->
-
-                <!--
-                <div id="summer2" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
-
-                    <p class="sem-title">SUMMER</p>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class25" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 110/L</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class26" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 110/L</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class27" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 110/L</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class28" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 110/L</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class29" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 110/L</P>
-                    </div>
-
-                </div>
-                -->
             </div>
 
             <!--
@@ -436,21 +433,25 @@
 
             -->
 
-            <div id="third-year" class="year-body">
-                <p class="current">THIRD YEAR</p>
+            <div id="third-year" class="year">
+                <p class="current">THIRD YEAR
+                    <button class="summer-button" onclick="addSummer(event)"><p class="summerTitle">ADD SUMMER</p></button>
+                </p>
+                
 
                 <!--
 
                     FIRST FALL
 
                 -->
+                <div class="year-body">
 
-                <div id="fall3" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="fall1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     <p class="sem-title">FALL</p>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class30" ondragstart="return false;" ondrop="return false;">
+                    id="class0" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -460,43 +461,33 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class31" ondragstart="return false;" ondrop="return false;">
+                    id="class1" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">MATH 150B/L</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class32" ondragstart="return false;" ondrop="return false;">
+                    id="class2" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">GE</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class33" ondragstart="return false;" ondrop="return false;">
+                    id="class3" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class34" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">GE</P>
                     </div>
 
                 </div>
@@ -508,58 +499,58 @@
                 -->
 
 
-                <div id="spring3" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="spring1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     <p class="sem-title">SPRING</p>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class35" ondragstart="return false;" ondrop="return false;">
+                    id="class5" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">COMP 182/L</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class36" ondragstart="return false;" ondrop="return false;">
+                    id="class6" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">COMP 122/L</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class37" ondragstart="return false;" ondrop="return false;">
+                    id="class7" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">PHIL 230</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class38" ondragstart="return false;" ondrop="return false;">
+                    id="class8" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">GE</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class39" ondragstart="return false;" ondrop="return false;">
+                    id="class9" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">GE</P>
                     </div>
 
                 </div>
@@ -569,13 +560,13 @@
                     FIRST SUMMER
 
                 -->
-
-                <div id="summer3" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!--
+                    <div id="summer1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     <p class="sem-title">SUMMER</p>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class40" ondragstart="return false;" ondrop="return false;">
+                    id="class10" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -585,7 +576,7 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class41" ondragstart="return false;" ondrop="return false;">
+                    id="class11" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -595,7 +586,7 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class42" ondragstart="return false;" ondrop="return false;">
+                    id="class12" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -605,7 +596,7 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class43" ondragstart="return false;" ondrop="return false;">
+                    id="class13" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -615,7 +606,7 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class44" ondragstart="return false;" ondrop="return false;">
+                    id="class14" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -624,6 +615,8 @@
                         <P class="classTitle">COMP 110/L</P>
                     </div>
 
+                </div>
+                -->
                 </div>
             </div>
 
@@ -633,67 +626,61 @@
 
             -->
 
-            <div id="fourth-year" class="year-body">
-                <p class="current">FOURTH YEAR</p>
+            <div id="fourth-year" class="year">
+                <p class="current">FOURTH YEAR
+                    <button class="summer-button" onclick="addSummer(event)"><p class="summerTitle">ADD SUMMER</p></button>
+                </p>
+                
 
                 <!--
 
                     FIRST FALL
 
                 -->
+                <div class="year-body">
 
-                <div id="fall4" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="fall1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     <p class="sem-title">FALL</p>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class45" ondragstart="return false;" ondrop="return false;">
+                    id="class0" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
+                            <img class="image" src="lock.svg" height="10px" width="10px"/>
                         </button>
 
                         <P class="classTitle">COMP 110/L</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class46" ondragstart="return false;" ondrop="return false;">
+                    id="class1" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">MATH 150B/L</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class47" ondragstart="return false;" ondrop="return false;">
+                    id="class2" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">GE</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class48" ondragstart="return false;" ondrop="return false;">
+                    id="class3" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
-                    </div>
-
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class49" ondragstart="return false;" ondrop="return false;">
-
-                        <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
-                            <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
-                        </button>
-
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">GE</P>
                     </div>
 
                 </div>
@@ -705,58 +692,58 @@
                 -->
 
 
-                <div id="spring4" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="spring1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     <p class="sem-title">SPRING</p>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class50" ondragstart="return false;" ondrop="return false;">
+                    id="class5" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">COMP 182/L</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class51" ondragstart="return false;" ondrop="return false;">
+                    id="class6" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">COMP 122/L</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class52" ondragstart="return false;" ondrop="return false;">
+                    id="class7" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">PHIL 230</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class53" ondragstart="return false;" ondrop="return false;">
+                    id="class8" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">GE</P>
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class54" ondragstart="return false;" ondrop="return false;">
+                    id="class9" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
                         </button>
 
-                        <P class="classTitle">COMP 110/L</P>
+                        <P class="classTitle">GE</P>
                     </div>
 
                 </div>
@@ -766,13 +753,13 @@
                     FIRST SUMMER
 
                 -->
-
-                <div id="summer4" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!--
+                    <div id="summer1" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     <p class="sem-title">SUMMER</p>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class55" ondragstart="return false;" ondrop="return false;">
+                    id="class10" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -782,7 +769,7 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class56" ondragstart="return false;" ondrop="return false;">
+                    id="class11" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -792,7 +779,7 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class57" ondragstart="return false;" ondrop="return false;">
+                    id="class12" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -802,7 +789,7 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class58" ondragstart="return false;" ondrop="return false;">
+                    id="class13" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -812,7 +799,7 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowTrash(event)" onmouseleave="HideTrash(event)" onclick="Geeks('fall1')"
-                    id="class59" ondragstart="return false;" ondrop="return false;">
+                    id="class14" ondragstart="return false;" ondrop="return false;">
 
                         <button class="trash-can" onclick="DeleteParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="big-trash-can.svg" height="10px" width="10px"/>
@@ -821,6 +808,8 @@
                         <P class="classTitle">COMP 110/L</P>
                     </div>
 
+                </div>
+                -->
                 </div>
             </div>
     

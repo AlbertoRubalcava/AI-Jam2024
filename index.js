@@ -91,26 +91,29 @@ function equalizeSemBodyHeights() {
   });
 }
 
-function ShowTrash(ev) {
+function ShowLock(ev) {
   let element = ev.currentTarget;
-  let button = element.querySelector('.trash-can');
+  let button = element.querySelector('.lock');
   button.style.opacity = '1';
 }
 
-function HideTrash(ev) {
+function HideLock(ev) {
   let element = ev.currentTarget;
-  let button = element.querySelector('.trash-can');
+  let button = element.querySelector('.lock');
   button.style.opacity = '0';
 }
 
-function DeleteParent(ev){
-  let element = ev.target;
-  if(element.classList.contains("image")){
-    element = element.parentNode;
-  }
-  element = element.parentNode;
-  console.log(element);
-  element.remove();
+function lockParent(ev){
+  if(ev.target.classList.contains('.image')){
+    var lock = ev.target.parentNode;
+  } else
+  var lock = ev.target;
+
+  var course = lock.parentNode;
+  
+  course.setAttribute("draggable", "false");
+
+  console.log("locked");
 }
 
 function allowDrop(ev) {
@@ -177,7 +180,8 @@ function setEqualHeight() {
   }
   switchButtonRemove(ev);
   
-  year.innerHTML += `<div id="summer1" class="sem-body summer" ondrop="drop(event)" ondragover="allowDrop(event)">
+  var semesters = year.querySelector('.year-body');
+  semesters.innerHTML += `<div id="summer1" class="sem-body summer" ondrop="drop(event)" ondragover="allowDrop(event)">
   <p class="sem-title">SUMMER</p>
 </div>`;
   equalizeSemBodyHeights();
