@@ -479,3 +479,12 @@ html, body, .parent-container {
     border-color: #b2ddee;
     cursor:pointer;
 }
+
+.image{
+    display: flex;
+    position: relative;
+    bottom: -12%;
+    text-align: center;
+    justify-content: center;
+    cursor:pointer;
+}
