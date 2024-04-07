@@ -73,19 +73,16 @@ function equalizeSemBodyHeights() {
       let maxHeight = 0;
       const semBodies = yearBody.querySelectorAll('.sem-body');
 
-      // Reset all sem-body heights to auto to get the natural height
       semBodies.forEach(function(semBody) {
           semBody.style.height = 'auto';
       });
 
-      // Find the tallest sem-body height
       semBodies.forEach(function(semBody) {
           if (semBody.offsetHeight > maxHeight) {
               maxHeight = semBody.offsetHeight;
           }
       });
 
-      // Set all sem-body heights to the tallest found height
       semBodies.forEach(function(semBody) {
           semBody.style.height = `${maxHeight}px`;
       });
@@ -170,7 +167,41 @@ function drop(ev) {
   equalizeSemBodyHeights();
 }
 
- equalizeSemBodyHeights();
+function errorPre(){
+  var error = main.querySelector('.error');
+
+  error.innerHTML+= `<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Pre-Requisite Error - </strong> Classes required before "COMP 282/L" : "COMP 182/L" and "MATH 150A".
+</div>`;
+}
+
+function errorUnit(){
+  var error = main.querySelector('.error');
+
+  error.innerHTML+= `<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Unit Error - </strong> Over 18 units planned for "FIRST YEAR 'FALL' ".
+</div>`;
+}
+
+function expand() {
+  var descriptions = document.querySelectorAll('.desc'); 
+
+  descriptions.forEach(function(desc) { 
+    if (desc.style.opacity === '0') {
+      desc.style.opacity = '1';
+      desc.style.fontSize = '0.8rem'; 
+      document.querySelector('.expand_planning').innerText = 'CLOSE ALL CLASS DESCRIPTIONS';
+    } else {
+      desc.style.opacity = '0';
+      desc.style.fontSize = '0px'; 
+      document.querySelector('.expand_planning').innerText = 'EXPAND ALL CLASS DESCRIPTIONS';
+    }
+  });
+  equalizeSemBodyHeights();
+}
+
 
  function addSummer(ev){
   
