@@ -236,10 +236,10 @@ html, body, .parent-container {
 }
 
 .currentBox{
-    margin:auto;
+    margin: auto;
     padding-left: 15px;
     width: 70%;
-    height: 65%;
+    height: 75%;
     border-radius: 3px;
     box-shadow: 0px 0px 2px#9a9ba0;
     background-color: #ffff;
