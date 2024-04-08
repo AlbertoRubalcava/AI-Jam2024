@@ -255,7 +255,10 @@ html, body, .parent-container {
     height: 30%;
     border-radius: 3px;
     margin-bottom: 25px;
-    background-color: #b7c9e2;
+    background-color: #fbeff0;
+    border-width: 3px;
+    border-color: #D22030;
+    border-style: solid;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -362,7 +365,17 @@ html, body, .parent-container {
     border-style: solid;
     display: inline-block;
     opacity: 1;
+
 }
+#spring2{
+    box-shadow: 0px 0px 10px 2px rgb(255, 221, 0);
+    cursor: default;
+}
+
+:is(#class12,#class13,#class14,#class15,#class12, #class11,#class10,#class9,#class8){
+    cursor: default;
+}
+
 .sum-body{
     flex: 1;
     max-width: 500px;
@@ -615,13 +628,22 @@ html, body, .parent-container {
     z-index: 1000;
 }
 
-.alert {
+.alertPre {
     padding: 20px;
-    background-color: rgb(255, 69, 69);
+    background-color: #e40000;
     color: white;
     position: sticky;
     top:0;
+    display:none;
+  }
 
+  .alertUnit {
+    padding: 20px;
+    background-color: #e40000;
+    color: white;
+    position: sticky;
+    top:0;
+    display:none;
   }
   
   .closebtn {
@@ -643,7 +665,6 @@ html, body, .parent-container {
     font-weight: 200;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0px;
-    opacity: 0;
     color:black;
   }
 

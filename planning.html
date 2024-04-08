@@ -20,7 +20,14 @@
         <div class = "main-body" id="main">
             <div class="main">
                 <div class="error">
-                
+                    <div class="alertPre">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>Pre-Requisite Error - </strong> Classes required before "COMP UPPERDIV" : "COMP 380/L".
+                    </div>
+                    <div class="alertUnit">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>Unit Error - </strong> Over 18 units planned for "THIRD YEAR 'SPRING' ".
+                    </div>
                 </div>
             </div>
             <div>
@@ -156,7 +163,7 @@
                     </div>
 
                     <div draggable="false" ondragstart="drag(event)" class="course-body" onmouseover="" onmouseleave=""
-                    id="class7" ondragstart="return false;" ondrop="return false;" ondragend="errorUnit()">
+                    id="class7" ondragstart="return false;" ondrop="return false;" >
 
                         <P class="classTitle">PHIL 230: A3</P>
                         <p class ="desc">Introduction to Formal Logic (3)</p>
@@ -232,7 +239,7 @@
 
                         
 
-                        <P class="classTitle">COMS 151H</P>
+                        <P class="classTitle">COMS 151H: A1</P>
                         <p class="desc">Honors Fundamentals of Public Speaking (3) </p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
@@ -240,7 +247,7 @@
                     </div>
 
                     <div draggable="false" ondragstart="" class="course-body" onmouseover="" onmouseleave=""
-                    id="class32" ondragstart="return false;" ondrop="return false;">
+                    id="class12" ondragstart="return false;" ondrop="return false;">
 
                         
 
@@ -260,11 +267,11 @@
                 -->
 
 
-                <div id="spring2" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="spring2" class="sem-body" ondrop="drop(event)" ondragover="allowDrop(event)" id="currentsem">
 
                     <p class="sem-title">SPRING</p>
 
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
+                    <div draggable="false" ondragstart="drag(event)" class="course-body" onmouseover="" onmouseleave=""
                     id="class12" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">COMP 322/L</P>
                         <p class="desc"> Introduction to Operating Systems and System Architecture and Lab (3/1)</p>
@@ -275,7 +282,7 @@
                         
                     </div>
 
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="" onmouseleave=""
                     id="class13" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">COMP 333</P>
                         <p class="desc">Concepts of Programming Languages (3)</p>
@@ -286,7 +293,7 @@
                         
                     </div>
 
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="" onmouseleave=""
                     id="class14" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">MATH 262</P>
                         <p class="desc">Introduction to Linear Algebra (3)</p>
@@ -297,7 +304,7 @@
                         
                     </div>
 
-                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
+                    <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="" onmouseleave=""
                     id="class15" ondragstart="return false;" ondrop="return false;">
 
                         
@@ -341,6 +348,7 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
                     id="class16" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">COMP 310</P>
+                        <p class="desc">Automata, Languages and Computation (3)</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -349,8 +357,9 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
-                    id="class17" ondragstart="return false;" ondrop="return false;">
+                    id="class17" ondragstart="return false;" ondrop="return false;" ondragend="errorUnit()">
                         <P class="classTitle">COMP 324</P>
+                        <p class="desc">Computer Networking and Security (3)</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -361,6 +370,7 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
                     id="class18" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">COMP 380/L</P>
+                        <p class="desc">Introduction to Software Engineering and Lab (2/1)</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -374,6 +384,7 @@
                         
 
                         <P class="classTitle">GE C3</P>
+                        <p class="desc">American History, Institutions and Ideals </p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -385,6 +396,7 @@
                         
 
                         <P class="classTitle">GE F</P>
+                        <p class="desc">Comparative Cultural Studies</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -406,6 +418,7 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
                     id="class20" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">MATH 340</P>
+                        <p class="desc">Introduction to Probability and Statistics (4)</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -414,8 +427,9 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
-                    id="class21" ondragstart="return false;" ondrop="return false;">
+                    id="class21" ondragstart="return false;" ondrop="return false;" ondragend="errorPre()">
                         <P class="classTitle">COMP UPPERDIV</P>
+                        <p class="desc">Computer Science Senior Elective</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -423,8 +437,9 @@
                     </div>
 
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
-                    id="class22" ondragstart="return false;" ondrop="return false;">
+                    id="class22" ondragstart="return false;" ondrop="return false;" ondragend="errorPre()">
                         <P class="classTitle">COMP UPPERDIV</P>
+                        <p class="desc">Computer Science Senior Elective</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -438,6 +453,7 @@
                         
 
                         <P class="classTitle">GE D1</P>
+                        <p class="desc">Social Sciences</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -449,6 +465,7 @@
                         
 
                         <P class="classTitle">GE D3/4</P>
+                        <p class="desc">Constitution of the United States/State and Local Government</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -486,6 +503,7 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
                     id="class24" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">COMP 482</P>
+                        <p class="desc">Algorithm Design and Analysis (3)</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -496,6 +514,7 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
                     id="class25" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">COMP 490/L</P>
+                        <p class="desc">Senior Design Project I and Lab (2/1)</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -506,6 +525,7 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
                     id="class26" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">COMP UPPERDIV</P>
+                        <p class="desc">Computer Science Senior Elective</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -519,6 +539,7 @@
                         
 
                         <P class="classTitle">COMP UPPERDIV</P>
+                        <p class="desc">Computer Science Senior Elective</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -530,6 +551,7 @@
                         
 
                         <P class="classTitle">GE UPPERDIV D1</P>
+                        <p class="desc">Upper Division Social Sciences </p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -551,6 +573,7 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
                     id="class28" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">COMP 491/L</P>
+                        <p class="desc">Senior Design Project II and Lab (2/1)</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -561,6 +584,7 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
                     id="class29" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">COMP UPPERDIV</P>
+                        <p class="desc">Computer Science Senior Elective</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -571,6 +595,7 @@
                     <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
                     id="class30" ondragstart="return false;" ondrop="return false;">
                         <P class="classTitle">GE C2</P>
+                        <p class="desc">Humanities</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
@@ -584,6 +609,7 @@
                         
 
                         <P class="classTitle">GE UPPERDIV F</P>
+                        <p class="desc">Upper DivisionComparative Cultural Studies</p>
                         <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
                             <img class="image" src="lock.webp" height="20px" width="20px"/>
                         </button>
