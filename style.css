@@ -353,14 +353,15 @@ html, body, .parent-container {
     margin-right: 15px;
     border-radius: 6px;
     margin-bottom: 20px;
-    background-color: #fff6ed;
+    background-color: #fbeff0;
     overflow: hidden;
     position: relative;
     text-align: center;
     border-width: 3px;
-    border-color: #e69959;
+    border-color: #D22030;
     border-style: solid;
     display: inline-block;
+    opacity: 1;
 }
 .sum-body{
     flex: 1;
@@ -370,14 +371,15 @@ html, body, .parent-container {
     margin-right: 15px;
     border-radius: 6px;
     margin-bottom: 20px;
-    background-color: #fff6ed;
+    background-color: #fbeff0;
     overflow: hidden;
     position: relative;
     text-align: center;
     border-width: 3px;
-    border-color: #e69959;
+    border-color: #D22030;
     border-style: solid;
     display: inline-block;
+    
 }
 
 .year-body{
@@ -400,6 +402,14 @@ html, body, .parent-container {
     border-width: 4px;
     border-color: #e4e4e4;
     border-style: solid;
+    
+}
+.completed *{
+    cursor: default !important;
+}
+
+.completed {
+    filter: brightness(80%);
 }
 
 .course-body{
@@ -409,16 +419,26 @@ html, body, .parent-container {
     border-radius: 3px;
     margin-bottom: 2px;
     margin-top: 4px;
-    background-color: #ecf4f7;
+    background-color: #fbfdfc;
     position: relative;
     text-align: center;
     border-width: 3px;
-    border-color: #b2ddee;
+    border-color: #dae1de;
     border-style: solid;
     user-select: none;
     cursor:grab;
     overflow: auto;
     
+}
+
+.fall{
+    background-color: #fbeff0;
+    border-color: #D22030;
+}
+
+.spring{
+    background-color: #fbeff0;
+    border-color: #D22030;
 }
 
 .sem-title{
@@ -427,7 +447,7 @@ html, body, .parent-container {
     padding-bottom: 5px;
     text-align: center;
     font-size: 25px;
-    color:#55565a;
+    color:black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .lock{

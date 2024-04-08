@@ -149,9 +149,12 @@ function drop(ev) {
   var elem = ev.target;
   if(elem.classList.contains("course-body")){
     elem = elem.parentNode;
-  } else if(elem.classList.contains("trash-can")){
+  } else if(elem.classList.contains("lock")){
     elem = elem.parentNode;
     elem = elem.parentNode;
+  } else if(elem.classList.contains("image")){
+    elem = elem.parentNode;
+    elem = elem.parentNode.parentNode;
   } else if(elem.classList.contains("classTitle")){
     elem = elem.parentNode;
     elem = elem.parentNode;
