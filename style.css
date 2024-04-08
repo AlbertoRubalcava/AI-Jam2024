@@ -236,6 +236,7 @@ html, body, .parent-container {
 }
 
 .currentBox{
+
     margin: auto;
     padding-left: 15px;
     width: 70%;
@@ -475,6 +476,7 @@ html, body, .parent-container {
     justify-content: center;
     opacity: 0%;
     cursor:pointer;
+    background-color:#fff;
 }
 
 .lock:hover img{
@@ -515,7 +517,9 @@ html, body, .parent-container {
 #pointer{
     cursor: pointer;
 }
-
+#regenPointer{
+    cursor: pointer;
+}
 .hide_planning{
     position: relative;
     display: inline-block;
@@ -677,4 +681,19 @@ html, body, .parent-container {
     padding: 25px 1rem;
     background-color: #eff1fa;
     border-width:0px;
+  }
+
+  #check{
+    color:rgb(0, 175, 0);
+    opacity: 0;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+  }
+  
+  .fade-in-out {
+    animation: fadeInOut 1.5s ease-in-out;
   }

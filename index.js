@@ -354,8 +354,15 @@ function expand() {
   yearTitle.innerHTML+= `<button class="summer-button" onclick="addSummer(event)"><p class="summerTitle">ADD SUMMER</p></button>`;
  }
 
- function regen(ev){
+ function fade(ev){
+  var checkIcon = ev.target.querySelector('.fa-check') || ev.target.closest('button').querySelector('.fa-check');
+  checkIcon.classList.remove('fade-in-out');
+  void checkIcon.offsetWidth;
+  checkIcon.classList.add('fade-in-out');
+ }
 
+ function regen(ev){
+  fade(ev);
   var error = main.querySelector('.alertUnit');
     error.style.display = 'none';
 
@@ -814,16 +821,7 @@ FIRST SUMMER
             
         </div>
 
-        <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
-        id="class27" ondragstart="return false;" ondrop="return false;">
 
-            
-
-            <P class="classTitle">COMP UPPERDIV</P>
-            <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;">
-                <img class="image" src="lock.webp" height="20px" width="20px"/>
-            </button>
-        </div>
 
         <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
         id="class35" ondragstart="return false;" ondrop="return false;">
@@ -868,7 +866,16 @@ FIRST SUMMER
 
             
         </div>
+        <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="" onmouseleave=""
+        id="class27" ondragstart="return false;" ondrop="return false;">
 
+            
+
+            <P class="classTitle">COMP UPPERDIV</P>
+            <button class="lock" onclick="lockParent(event)" ondragstart="return false;" ondrop="return false;" style="opacity: 1;">
+                <img class="image" src="lock.webp" height="20px" width="20px"/>
+            </button>
+        </div>
         <div draggable="true" ondragstart="drag(event)" class="course-body" onmouseover="ShowLock(event)" onmouseleave="HideLock(event)"
         id="class30" ondragstart="return false;" ondrop="return false;">
             <P class="classTitle">GE C2</P>
