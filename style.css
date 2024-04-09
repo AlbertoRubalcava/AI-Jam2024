@@ -273,10 +273,10 @@ html, body, .parent-container {
 }
 
 .currentDesc{
-    font-size: .95rem;
+    font-size: .72rem;
     font-weight: 200;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 10px;
+    padding-top: 3px;
     padding-left: 10px;
     padding-right: 10px;
 }
